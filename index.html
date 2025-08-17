@@ -52,42 +52,50 @@
         </div>
 
         <!-- Restructure skills with visual hierarchy -->
-        <div class="tagline" style="font-family: 'Inter', sans-serif;">
+        <div class="tagline"
+            style="font-family: 'Inter', sans-serif; text-align: left; max-width: 900px; margin: 0 auto;">
             <strong>AI/ML Core</strong><br />
-            <div style="margin: 0.8rem 0 2rem 0; padding-left: 1rem; border-left: 3px solid rgba(255, 215, 0, 0.5);">
-                Python, TensorFlow, PyTorch, Keras, Scikit-learn, XGBoost, LightGBM<br />
-                Hugging Face Transformers, LangChain, LlamaIndex, OpenAI API, Anthropic Claude<br />
-                Computer Vision (OpenCV, YOLO, Detectron2), NLP, Time Series Analysis<br />
-                RAG Systems, Vector Databases (Pinecone, Weaviate, Chroma), Embeddings
+            <div class="skills-container">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">TensorFlow</span>
+                <span class="skill-pill">PyTorch</span>
+                <span class="skill-pill">Scikit-learn</span>
+                <span class="skill-pill">Hugging Face</span>
+                <span class="skill-pill">LangChain</span>
+                <span class="skill-pill">LlamaIndex</span>
+                <span class="skill-pill">OpenCV</span>
+                <span class="skill-pill">YOLO</span>
+                <span class="skill-pill">RAG Systems</span>
+                <span class="skill-pill">Vector Databases</span>
+                <span class="skill-pill">NLP</span>
             </div>
 
             <strong>Data & MLOps</strong><br />
-            <div style="margin: 0.8rem 0 2rem 0; padding-left: 1rem; border-left: 3px solid rgba(255, 215, 0, 0.5);">
-                Pandas, NumPy, Polars, Apache Spark, Dask, Jupyter, MLflow, Weights & Biases<br />
-                DVC, Kubeflow, Apache Airflow, Model Versioning, A/B Testing<br />
-                Feature Engineering, Data Pipelines, Model Monitoring
+            <div class="skills-container">
+                <span class="skill-pill">Pandas</span>
+                <span class="skill-pill">NumPy</span>
+                <span class="skill-pill">Apache Spark</span>
+                <span class="skill-pill">MLflow</span>
+                <span class="skill-pill">Kubeflow</span>
+                <span class="skill-pill">Airflow</span>
+                <span class="skill-pill">DVC</span>
+                <span class="skill-pill">Data Pipelines</span>
+                <span class="skill-pill">A/B Testing</span>
+                <span class="skill-pill">Model Monitoring</span>
             </div>
 
-            <strong>Cloud AI Services</strong><br />
-            <div style="margin: 0.8rem 0 2rem 0; padding-left: 1rem; border-left: 3px solid rgba(255, 215, 0, 0.5);">
-                Azure ML, Azure OpenAI, Azure Cognitive Services<br />
-                AWS SageMaker, AWS Bedrock, Google Vertex AI<br />
-                Model Deployment, Inference Optimization, Edge AI
-            </div>
-
-            <strong>Backend & Infrastructure</strong><br />
-            <div style="margin: 0.8rem 0 2rem 0; padding-left: 1rem; border-left: 3px solid rgba(255, 215, 0, 0.5);">
-                FastAPI, Flask, C#, .NET, GraphQL, REST APIs<br />
-                Docker, Kubernetes, Terraform, CI/CD for ML<br />
-                CUDA Programming, Model Quantization, ONNX<br />
-                PostgreSQL, MongoDB, Redis, Elasticsearch
-            </div>
-
-            <strong>Full-Stack & Traditional</strong><br />
-            <div style="margin: 0.8rem 0 2rem 0; padding-left: 1rem; border-left: 3px solid rgba(255, 215, 0, 0.5);">
-                JavaScript, TypeScript, React, Angular, NestJS<br />
-                Kafka, Event Driven, RabbitMQ, NServiceBus, Java<br />
-                Cypress, Playwright, Locust, HTML, CSS
+            <strong>Cloud AI & Backend</strong><br />
+            <div class="skills-container">
+                <span class="skill-pill">Azure ML</span>
+                <span class="skill-pill">AWS SageMaker</span>
+                <span class="skill-pill">Google Vertex AI</span>
+                <span class="skill-pill">FastAPI</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Kubernetes</span>
+                <span class="skill-pill">Terraform</span>
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">C# / .NET</span>
+                <span class="skill-pill">GraphQL</span>
             </div>
         </div>
 
@@ -100,11 +108,20 @@
             <div style="max-width: 900px; margin: 0 auto;">
                 <div class="project-card">
                     <div class="project-title">LLM-Powered RTSP Human Detection System</div>
-                    Real-time RTSP stream analysis using Ollama/OpenAI LLMs with YOLO object detection<br />
-                    Delivers instant alerts to Google Hub devices for enhanced security monitoring
-                    <div class="project-links" style="margin-top: 0.5rem;">
+                    <div class="project-description">
+                        Real-time RTSP stream analysis using Ollama/OpenAI LLMs with YOLO object detection.
+                        Delivers instant alerts to Google Hub devices for enhanced security monitoring.
+                    </div>
+                    <div class="project-tech-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">LLM</span>
+                        <span class="skill-pill">YOLO</span>
+                        <span class="skill-pill">OpenCV</span>
+                        <span class="skill-pill">Docker</span>
+                    </div>
+                    <div class="project-links">
                         <a href="https://github.com/LiteObject/rtsp-processing" target="_blank"
-                            style="color: var(--accent-gold); text-decoration: none;">
+                            style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -112,11 +129,19 @@
 
                 <div class="project-card">
                     <div class="project-title">LangChain Documentation MCP Server</div>
-                    Real-time MCP server providing instant access to LangChain API references<br />
-                    Streamlines LLM app development with integrated code examples and documentation
-                    <div class="project-links" style="margin-top: 0.5rem;">
+                    <div class="project-description">
+                        Real-time MCP server providing instant access to LangChain API references.
+                        Streamlines LLM app development with integrated code examples and documentation.
+                    </div>
+                    <div class="project-tech-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">MCP</span>
+                    </div>
+                    <div class="project-links">
                         <a href="https://github.com/LiteObject/langchain-mcp-server" target="_blank"
-                            style="color: var(--accent-gold); text-decoration: none;">
+                            style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -124,11 +149,19 @@
 
                 <div class="project-card">
                     <div class="project-title">Hugging Face SmolAgents Demo</div>
-                    AI agent implementation using Hugging Face's smolagents library with CodeAgent<br />
-                    Demonstrates LLM-powered task automation including code generation and web search
-                    <div class="project-links" style="margin-top: 0.5rem;">
+                    <div class="project-description">
+                        AI agent implementation using Hugging Face's smolagents library with CodeAgent.
+                        Demonstrates LLM-powered task automation including code generation and web search.
+                    </div>
+                    <div class="project-tech-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Hugging Face</span>
+                        <span class="skill-pill">AI Agents</span>
+                        <span class="skill-pill">LLM</span>
+                    </div>
+                    <div class="project-links">
                         <a href="https://github.com/LiteObject/demo_smolagents" target="_blank"
-                            style="color: var(--accent-gold); text-decoration: none;">
+                            style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -136,11 +169,19 @@
 
                 <div class="project-card">
                     <div class="project-title">Anthropic AI Agent in Docker</div>
-                    Containerized Anthropic Claude Sonnet model for text generation and CSV analysis<br />
-                    Scalable deployment solution for enterprise AI tasks with consistent environments
-                    <div class="project-links" style="margin-top: 0.5rem;">
+                    <div class="project-description">
+                        Containerized Anthropic Claude Sonnet model for text generation and CSV analysis.
+                        Scalable deployment solution for enterprise AI tasks with consistent environments.
+                    </div>
+                    <div class="project-tech-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Anthropic</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">Claude</span>
+                    </div>
+                    <div class="project-links">
                         <a href="https://github.com/LiteObject/anthropic-agent-in-docker" target="_blank"
-                            style="color: var(--accent-gold); text-decoration: none;">
+                            style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -148,11 +189,19 @@
 
                 <div class="project-card">
                     <div class="project-title">LlamaIndex Documentation Platform</div>
-                    Docker-based MCP server integrated with VS Code Copilot for LLM development<br />
-                    Provides seamless access to LlamaIndex documentation and boosts productivity
-                    <div class="project-links" style="margin-top: 0.5rem;">
+                    <div class="project-description">
+                        Docker-based MCP server integrated with VS Code Copilot for LLM development.
+                        Provides seamless access to LlamaIndex documentation and boosts productivity.
+                    </div>
+                    <div class="project-tech-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">LlamaIndex</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">VS Code</span>
+                    </div>
+                    <div class="project-links">
                         <a href="https://github.com/LiteObject/llamaindex-mcp-server" target="_blank"
-                            style="color: var(--accent-gold); text-decoration: none;">
+                            style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -160,11 +209,19 @@
 
                 <div class="project-card">
                     <div class="project-title">ML Security Analysis Tutorial</div>
-                    Hands-on scikit-learn tutorial for network anomaly detection and cybersecurity<br />
-                    Covers classification, regression, and practical ML applications for security
-                    <div class="project-links" style="margin-top: 0.5rem;">
+                    <div class="project-description">
+                        Hands-on scikit-learn tutorial for network anomaly detection and cybersecurity.
+                        Covers classification, regression, and practical ML applications for security.
+                    </div>
+                    <div class="project-tech-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Scikit-learn</span>
+                        <span class="skill-pill">Security</span>
+                        <span class="skill-pill">Tutorial</span>
+                    </div>
+                    <div class="project-links">
                         <a href="https://github.com/LiteObject/scikit-learn-security-tutorial" target="_blank"
-                            style="color: var(--accent-gold); text-decoration: none;">
+                            style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
