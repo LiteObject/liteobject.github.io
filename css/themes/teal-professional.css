@@ -4,13 +4,15 @@
     --accent-coral: #FF6B6B;        /* Coral - Complements teal */
     --accent-gold: #FFD700;          /* Gold - Complements teal */
     --dark-slate: #2C3E50;          /* Dark Slate for text */
+    --aqua-teal: #469696;          /* Aqua Teal for highlights */
+    --pale-teal: #82B4AA;          /* Pale Teal for softer accents */
     --light-gray: #F8F9FA;          /* Light background */
     --medium-gray: #6C757D;         /* Secondary text */
     --white: #FFFFFF;
 }
 
 main {
-    background: linear-gradient(135deg, #667eea 0%, #008B8B 100%);
+    background: linear-gradient(135deg, #469696 0%, #008B8B 100%);
     color: var(--white);
     min-height: 100vh;
     padding: 3rem 2rem;
