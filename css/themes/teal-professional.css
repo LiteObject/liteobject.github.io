@@ -601,7 +601,7 @@ main {
         inset: auto 0 0 0;
         background: rgba(8, 33, 38, 0.92);
         backdrop-filter: blur(22px);
-        border-radius: 28px 28px 0 0;
+        border-radius: 16px 16px 0 0;
         border: 1px solid rgba(197, 231, 230, 0.12);
         box-shadow: 0 -28px 48px rgba(8, 33, 38, 0.45);
         padding: 28px clamp(20px, 6vw, 36px) clamp(36px, 8vw, 48px);
@@ -630,10 +630,10 @@ main {
         padding: 14px 18px;
         background: rgba(255, 255, 255, 0.04);
         border: 1px solid rgba(197, 231, 230, 0.12);
-        border-radius: 18px;
+        border-radius: 8px;
         text-align: center;
         transition: background 180ms var(--md-motion-easing-standard),
-            border-color 180ms var(--md-motion-easing-standard),
+            border-color var(--md-motion-duration-medium2) var(--md-motion-easing-standard),
             transform 180ms var(--md-motion-easing-standard);
     }
 
@@ -647,9 +647,9 @@ main {
 
     .site-nav a:active,
     .site-nav a:hover {
-        background: rgba(255, 209, 102, 0.12);
-        border-color: rgba(255, 209, 102, 0.2);
-        transform: translateY(-2px);
+        /* background: var(--md-source-teal); */
+        border-color: var(--md-source-gold);
+        /* transform: translateY(-2px); */
     }
 
     .site-nav::before {
