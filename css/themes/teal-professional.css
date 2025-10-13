@@ -841,6 +841,18 @@ main {
     .portfolio-links {
         margin-left: 0;
     }
+
+    .portfolio-tags {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+        width: 100%;
+    }
+
+    .portfolio-tags .md-chip {
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 @keyframes fadeInUp {
