@@ -83,7 +83,6 @@
                 <ul>
                     <li><a href="#skills">Capabilities</a></li>
                     <li><a href="#projects">Work</a></li>
-                    <li><a href="#impact">Impact</a></li>
                     <li><a href="#connect">Connect</a></li>
                     <li><a href="mailto:tuniis@live.com">Start a Project</a></li>
                 </ul>
@@ -94,38 +93,34 @@
         <div class="container">
             <section class="hero section">
                 <div class="hero-copy">
-                    <span class="hero-badge md-label-medium">Principal Software Engineer • AI Solutions Architect</span>
+                    <span class="hero-badge md-label-medium">Principal Engineer • AI Consultant</span>
                     <h1 class="hero-title md-display-medium">
-                        I architect <span class="hero-highlight">enterprise AI systems</span> that ship to production
+                        Your engineering team’s <span class="hero-highlight">force multiplier for AI adoption</span>
                     </h1>
                     <p class="lead md-body-large">
-                        Principal engineer with 12+ years building scalable software, now specializing in LLM
-                        infrastructure
-                        and AI consulting. From MCP servers to multi-agent systems, I help teams adopt AI the right way.
+                        12+ years building scalable infrastructure—now helping enterprises deploy secure, maintainable
+                        LLM applications.
+                        From multi-agent workflows to production-grade MCP integrations, I bridge the gap between AI
+                        innovation and real-world impact.
                     </p>
-                    <!-- <ul class="hero-footnote">
-                        <li>Full ML lifecycle: research, MLOps, and monitoring</li>
-                        <li>Product-first mindset with enterprise delivery</li>
-                        <li>Proven ROI turning AI pilots into revenue drivers</li>
-                    </ul> -->
                 </div>
             </section>
 
             <section class="current-focus section" id="focus">
                 <div class="section-heading md-headline-label">Current Focus</div>
-                <h2 class="section-title md-headline-medium">Production-grade LLM orchestration</h2>
+                <h2 class="section-title md-headline-medium">Building the AI developer ecosystem</h2>
                 <div class="metrics-grid focus-grid">
                     <article class="metric-card">
-                        <span class="metric-value" data-github-stat="repos">—</span>
-                        <span class="metric-label">Public Repos</span>
+                        <span class="metric-value">MCP Servers</span>
+                        <span class="metric-label">Accelerating LLM development with IDE integrations</span>
                     </article>
                     <article class="metric-card">
-                        <span class="metric-value" data-github-stat="followers">—</span>
-                        <span class="metric-label">Followers</span>
+                        <span class="metric-value">AI Agents</span>
+                        <span class="metric-label">Production autonomous systems with Anthropic & OpenAI</span>
                     </article>
                     <article class="metric-card">
-                        <span class="metric-value" data-github-stat="stars">—</span>
-                        <span class="metric-label">Total Stars</span>
+                        <span class="metric-value">Open Source</span>
+                        <span class="metric-label">20+ tools helping developers ship AI faster</span>
                     </article>
                 </div>
             </section>
@@ -177,43 +172,19 @@
                     <article class="capability-card">
                         <h3 class="capability-title">Cloud &amp; Backend</h3>
                         <div class="capability-pills md-chip-set">
-                            <span class="skill-pill md-chip">Azure ML</span>
-                            <span class="skill-pill md-chip">FastAPI</span>
+                            <span class="skill-pill md-chip">API</span>
                             <span class="skill-pill md-chip">Docker</span>
                             <span class="skill-pill md-chip">Kubernetes</span>
                             <span class="skill-pill md-chip">Terraform</span>
                             <span class="skill-pill md-chip">PostgreSQL</span>
                             <span class="skill-pill md-chip">C# / .NET</span>
                             <span class="skill-pill md-chip">GraphQL</span>
-                            <span class="skill-pill md-chip">AWS SageMaker</span>
-                            <span class="skill-pill md-chip">Google Vertex AI</span>
-                            <span class="skill-pill md-chip">Azure OpenAI</span>
+                            <span class="skill-pill md-chip">AWS</span>
+                            <span class="skill-pill md-chip">Azure</span>
                             <span class="skill-pill md-chip">Redis</span>
                             <span class="skill-pill md-chip">Kafka</span>
                             <span class="skill-pill md-chip">gRPC</span>
                         </div>
-                    </article>
-                </div>
-            </section>
-            <section class="metrics section" id="impact">
-                <div class="section-heading md-headline-label">Impact Metrics</div>
-                <h2 class="section-title md-headline-medium">Quantifiable outcomes delivered for stakeholders.</h2>
-                <div class="metrics-grid">
-                    <article class="metric-card">
-                        <span class="metric-value">40%</span>
-                        <span class="metric-label">Reduction in model inference spend</span>
-                    </article>
-                    <article class="metric-card">
-                        <span class="metric-value">95%</span>
-                        <span class="metric-label">Accuracy on production vision workloads</span>
-                    </article>
-                    <article class="metric-card">
-                        <span class="metric-value">3×</span>
-                        <span class="metric-label">Faster ML deployment cycles</span>
-                    </article>
-                    <article class="metric-card">
-                        <span class="metric-value">$2M+</span>
-                        <span class="metric-label">Annualized cost savings unlocked</span>
                     </article>
                 </div>
             </section>
@@ -501,70 +472,6 @@
                 menuToggle.setAttribute('aria-expanded', String(willOpen));
                 document.body.classList.toggle('nav-open', willOpen);
             });
-
-            (async function () {
-                const statTargets = {
-                    repos: document.querySelector('[data-github-stat="repos"]'),
-                    followers: document.querySelector('[data-github-stat="followers"]'),
-                    stars: document.querySelector('[data-github-stat="stars"]')
-                };
-
-                if (!statTargets.repos || !statTargets.followers || !statTargets.stars) {
-                    return;
-                }
-
-                const username = 'LiteObject';
-                const formatNumber = (value) => Number(value || 0).toLocaleString();
-
-                const safeSet = (el, value) => {
-                    if (el) {
-                        el.textContent = formatNumber(value);
-                    }
-                };
-
-                const handleError = () => {
-                    Object.values(statTargets).forEach((el) => {
-                        if (el && (el.textContent === '—' || el.textContent === '')) {
-                            el.textContent = 'N/A';
-                        }
-                    });
-                };
-
-                try {
-                    const userResponse = await fetch(`https://api.github.com/users/${username}`, {
-                        headers: {
-                            'Accept': 'application/vnd.github+json'
-                        },
-                        cache: 'no-cache'
-                    });
-
-                    if (!userResponse.ok) {
-                        throw new Error('GitHub user request failed');
-                    }
-
-                    const userData = await userResponse.json();
-                    safeSet(statTargets.repos, userData.public_repos);
-                    safeSet(statTargets.followers, userData.followers);
-
-                    const reposResponse = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`, {
-                        headers: {
-                            'Accept': 'application/vnd.github+json'
-                        },
-                        cache: 'no-cache'
-                    });
-
-                    if (!reposResponse.ok) {
-                        throw new Error('GitHub repos request failed');
-                    }
-
-                    const reposData = await reposResponse.json();
-                    const totalStars = reposData.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
-                    safeSet(statTargets.stars, totalStars);
-                } catch (error) {
-                    console.error('Failed to load GitHub stats:', error);
-                    handleError();
-                }
-            })();
 
             siteNav.querySelectorAll('a').forEach((link) => {
                 link.addEventListener('click', () => {
