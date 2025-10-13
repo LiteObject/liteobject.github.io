@@ -739,8 +739,9 @@ main {
 
 .metric-value {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(28px, 4vw, 42px);
-    font-weight: 700;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 600;
+    line-height: 1.2;
     color: var(--md-sys-color-tertiary);
     max-width: 100%;
     overflow-wrap: break-word;
@@ -749,7 +750,7 @@ main {
 }
 
 .metric-label {
-    font-size: var(--md-typescale-body-medium);
+    font-size: clamp(14px, 1.8vw, 16px);
     color: rgba(197, 231, 230, 0.82);
     letter-spacing: 0.04em;
     max-width: 100%;
