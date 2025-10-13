@@ -871,15 +871,16 @@ main {
     }
 
     .portfolio-tags {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         width: 100%;
+        justify-content: flex-start;
     }
 
     .portfolio-tags .md-chip {
         justify-content: center;
-        width: 100%;
+        width: auto;
     }
 }
 
