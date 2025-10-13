@@ -505,12 +505,15 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: clamp(40px, 6vw, 72px);
     align-items: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .hero-copy {
-    max-width: 560px;
+    /* max-width: 560px; */
     display: grid;
     gap: 24px;
+    justify-items: center;
 }
 
 .hero-badge {
@@ -540,51 +543,24 @@ main {
     list-style: none;
     display: grid;
     gap: 16px;
+    justify-items: center;
 }
 
 .hero-footnote li {
     color: rgba(197, 231, 230, 0.78);
     font-size: var(--md-typescale-body-medium);
+    max-width: 480px;
 }
 
-.hero-panel {
-    position: relative;
-    padding: 40px;
-    border-radius: var(--md-shape-extra-large);
-    background: var(--md-sys-color-surface-container);
-    border: 1px solid var(--md-sys-color-outline-variant);
-}
-
-.hero-panel h3 {
-    margin: 0 0 16px;
-    font-size: var(--md-typescale-title-medium);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(197, 231, 230, 0.7);
-}
-
-.hero-panel p {
-    margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
+.current-focus .section-title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 720px;
     color: var(--md-sys-color-on-surface);
 }
 
-.hero-status {
-    margin-top: 32px;
-    display: grid;
-    gap: 16px;
-}
-
-.status-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    border-radius: var(--md-shape-medium);
-    background: var(--md-sys-color-surface);
-    border: 1px solid var(--md-sys-color-outline-variant);
+.focus-grid {
+    margin-top: 40px;
 }
 
 .capabilities {
@@ -847,10 +823,6 @@ main {
 
     .hero {
         gap: 32px;
-    }
-
-    .hero-panel {
-        padding: 32px;
     }
 
     .portfolio-grid {
